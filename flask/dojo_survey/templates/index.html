@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <title>Dojo Survey</title>
+</head>
+<body>
+    <form action ="/result" method = "post">
+    <div class="bg-secondary d-flex flex-column align-items-center">
+        <h1 class="text-warning">Dojo Survey</h1>
+            <div class="p-3">
+                <label for="name">Your Name:</label>
+                    <input type="text" name="name">
+            </div>
+            <div class="p-3">
+                <label for="location">Dojo Location:</label>
+                <select name="location">
+                    <option value="chicago">Chicago</option>
+                    <option value="seattle">Seattle</option>
+                    <option value="remote">Remote</option>
+                </select>
+            </div>
+            <div class="p-3">
+                <label for="language">Favorite Language:</label>
+                <select name="language">
+                    <option value="python">Python</option>
+                    <option value="javascript">Javascript</option>
+                    <option value="c#">C#</option>
+                </select>
+            </div>
+            <div class="p-3">
+                <label for="comment">Comments (optional):</label>
+                    <textarea name="comment"></textarea>
+                    <input type="submit">
+            </div>
+    </div>
+    </form>
+</body>
+</html>

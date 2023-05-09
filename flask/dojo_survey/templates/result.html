@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Results</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>Name:</td>
+            <td>{{session ['username']}}</td>
+        </tr>
+        <tr>
+            <td>Dojo Location:</td>
+            <td>{{session ['userlocation']}}</td>
+        </tr>
+        <tr>
+            <td>Favorite Language:</td>
+            <td>{{session ['userlanguage']}}</td>
+        </tr>
+        <tr>
+            <td>Comments:</td> 
+            <td>{{session['usercomment']}}</td>
+        </tr>
+    </table>
+</body>
+</html>
